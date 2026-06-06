@@ -103,20 +103,22 @@
     letter-spacing: 0.04em;
   }
 
-  /* eye mark */
-  .eye {
-    width: 1em; height: 1em;
-    border-radius: 50%;
-    border: 0.13em solid currentColor;
-    display: inline-grid;
-    place-items: center;
-    position: relative;
+  /* logo images */
+  .logo-full {
+    height: 1em;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
   }
-  .eye::after {
-    content: "";
-    width: 0.34em; height: 0.34em;
-    border-radius: 50%;
-    background: var(--accent);
+  .logo-icon {
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+  .s-dark .logo-full-invert {
+    filter: brightness(0) invert(1);
   }
 
   /* striped placeholder */
@@ -200,7 +202,7 @@
 
       <div class="anim anim-2" style="display:flex; flex-direction:column; gap: 40px;">
         <div style="display:flex; align-items:center; gap: 36px;">
-          <span class="eye" style="font-size: 132px; color: var(--ink);"></span>
+          <img class="logo-icon" src="assets/logo-icon.png" alt="Market Eye icon" style="width: 132px; height: 132px;">
           <h1 style="font-size: var(--type-display); font-weight: 800; letter-spacing: -0.03em; line-height: 0.94;">Market&nbsp;Eye<span class="accent">&nbsp;AI</span></h1>
         </div>
         <p class="lead" style="max-width: 1180px; font-size: 44px;">From a blank product idea to a live, competitively-positioned online store — automated with real-time web data.</p>
@@ -352,15 +354,15 @@
           <h2 class="title anim anim-2">Type a niche.<br>Get a trend report.</h2>
           <div style="display:flex; flex-direction:column; gap: 28px;">
             <div class="anim anim-3" style="display:flex; gap: 20px; align-items:flex-start;">
-              <span class="eye" style="font-size: 30px; margin-top: 6px;"></span>
+              <img class="logo-icon" src="assets/logo-icon.png" alt="" style="width: 30px; height: 30px; margin-top: 6px;">
               <p class="body" style="color: var(--ink);"><strong style="font-weight:700;">Virality &amp; seasonality</strong> — see what's spiking and when demand peaks.</p>
             </div>
             <div class="anim anim-4" style="display:flex; gap: 20px; align-items:flex-start;">
-              <span class="eye" style="font-size: 30px; margin-top: 6px;"></span>
+              <img class="logo-icon" src="assets/logo-icon.png" alt="" style="width: 30px; height: 30px; margin-top: 6px;">
               <p class="body" style="color: var(--ink);"><strong style="font-weight:700;">Profit-margin estimates</strong> — sourcing vs. selling price at a glance.</p>
             </div>
             <div class="anim anim-5" style="display:flex; gap: 20px; align-items:flex-start;">
-              <span class="eye" style="font-size: 30px; margin-top: 6px;"></span>
+              <img class="logo-icon" src="assets/logo-icon.png" alt="" style="width: 30px; height: 30px; margin-top: 6px;">
               <p class="body" style="color: var(--ink);"><strong style="font-weight:700;">Drill-down analysis</strong> — open any product to see the underlying evidence.</p>
             </div>
           </div>
@@ -482,7 +484,7 @@
       </div>
 
       <div class="anim anim-3" style="display:flex; align-items:center; gap: 28px;">
-        <span class="eye" style="font-size: 48px; color: var(--dark-ink);"></span>
+        <img class="logo-icon" src="assets/logo-icon.png" alt="Market Eye icon" style="width: 48px; height: 48px; filter: brightness(0) invert(1);">
         <span style="font-size: 38px; font-weight: 800; letter-spacing: -0.02em;">Market Eye<span class="accent"> AI</span></span>
         <span class="rule" style="flex:1; height:1px; background: var(--dark-line);"></span>
         <span class="mono small" style="color: var(--dark-muted);">SCAN · ANALYZE · LAUNCH · GROW</span>
